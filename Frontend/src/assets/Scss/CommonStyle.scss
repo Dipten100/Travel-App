@@ -1,0 +1,287 @@
+.set-section {
+  margin: 0;
+  padding: 0;
+  padding-top: 200px;
+}
+
+// display none
+.d-none{
+  display: none;
+}
+
+// cursor-pointer
+.cursor-pointer{
+  cursor: pointer;
+}
+
+// btn style
+.lab-btn {
+  color: var(--btn-text-color);
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  font-family: var(--secondary-font-family);
+  font-weight: 400;
+  border-radius: 0.5em;
+  background: var(--primary-color);
+  cursor: pointer;
+  border: 1px solid var(--primary-color);
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+.lab-btn:hover {
+  border: 1px solid white;
+}
+
+.lab-btn:active {
+  box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
+}
+
+// modal style
+.modal {
+  .modal-body {
+    background: var(--primary-color);
+    color: var(--modal-text-color);
+    .modal-header {
+      justify-content: center;
+      p {
+        font-family: var(--secondary-font-family);
+        width: 100%;
+        text-align: center;
+        font-size: 24px;
+        text-transform: uppercase;
+      }
+    }
+    .modal-bottom {
+      margin: 10px;
+      .forgot-password {
+        float: right;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 400;
+      }
+      .last-line {
+        float: left;
+        font-size: 16px;
+        font-weight: 400;
+        span {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+// form design
+.lab-form {
+  $primary: var(--form-input-bx-border-primary-color);
+  $secondary: var(--form-input-bx-border-secondary-color);
+  $white: var(--form-input-bx-text-focus-color);
+  $gray: var(--form-input-bx-text-normal-color);
+  .form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin: 20px 0;
+    width: 100%;
+    .eyeIcons{
+      font-size: 1.5rem;
+      position: absolute;
+      right: 0;
+      top: 25px;
+      cursor: pointer;
+    }
+    &.button_field{
+      text-align: center;
+    }
+  }
+
+  .form__field {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid $gray;
+    outline: 0;
+    font-size: 1.3rem;
+    color: $white;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+
+    &::placeholder {
+      color: transparent;
+    }
+
+    &:placeholder-shown ~ .form__label {
+      font-size: 1.3rem;
+      cursor: text;
+      top: 20px;
+    }
+    &.password__field{
+      width: 90%;
+      text-align: left;
+    }
+  }
+
+  .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: $gray;
+  }
+
+  .form__field:focus {
+    ~ .form__label {
+      position: absolute;
+      top: 0;
+      display: block;
+      transition: 0.2s;
+      font-size: 1rem;
+      color: $primary;
+      font-weight: 700;
+    }
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, $primary, $secondary);
+    border-image-slice: 1;
+  }
+  /* reset input */
+  .form__field {
+    &:required,
+    &:invalid {
+      box-shadow: none;
+    }
+  }
+}
+
+// card design
+.card-section{
+  background: var(--secondary-color);
+  box-shadow: var(--shadow-color) 0px 2px 4px 0px, var(--shadow-color) 0px 2px 16px 0px;
+  border-radius: 10px;
+  display: block;
+  width: 446px;
+  height: 667px;
+  .card-container{
+    display: block;
+    position: relative;
+    padding: 10px;
+    .card-top{
+      position: relative;
+      display: flex;
+      .card-img{
+        padding-top: 10px;
+        text-align: center;
+        img{
+          height: 300px;
+          width: 300px;
+        }
+      }
+      .card-activity{
+        .activity-btn{
+          span{
+            font-size: 2em;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .card-bottom{
+      padding: 20px 10px;
+      .card-rating{
+        padding: 10px;
+        display: flex;
+        span{
+          padding-left: 10px;
+          font-size: 18px;
+          color: var(--primary-text-color);
+          font-weight: 500;
+        }
+      }
+      .card-title{
+        p{
+          font-size: 32px;
+          font-weight: 700;
+          color: var(--primary-text-color);
+          font-family: var(--secondary-font-family);
+        }
+      }
+      .card-details{
+        width: auto;
+        height: 50px;
+        p{
+          font-size: 20px;
+          font-weight: 500;
+          color: var(--primary-text-color);
+          font-family: var(--secondary-font-family);
+        }
+      }
+      .card-price{
+        p{
+          font-size: 24px;
+          font-weight: 700;
+          color: var(--primary-text-color);
+          font-family: var(--secondary-font-family);
+        }
+      }
+      .card-btn{
+        text-align: center;
+      }
+    }
+  }
+}
+
+// text trancate
+.trancate{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// ratings design
+.rating-section{
+  display: flex;
+  gap: 1.2em;
+  position: relative;
+
+  // tooltip text
+  .tooltiptext {
+    visibility: hidden;
+    width: 50px;
+    background-color: var(--secondary-color);
+    color: var(--primary-text-color);
+    border: 2px solid var(--primary-color);
+    text-align: center;
+    padding: 2px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    &::after{
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: var(--primary-color) transparent transparent transparent;
+    }
+  }
+  &:hover{
+    .tooltiptext{
+      visibility: visible;
+    }
+  }
+  .star{
+    &.glow{
+      color: var(--star-glow-color);
+    }
+    &.glowHalf{
+      color: var(--star-glow-color);
+    }
+  }
+}
+

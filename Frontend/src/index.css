@@ -1,0 +1,21 @@
+:root{
+    --primary-font-family:"Poppins", sans-serif;
+    --secondary-font-family:"Roboto Serif", serif;
+    --brand-name-font-family:"Pacifico", cursive;
+    --primary-color:rgba(50, 0, 132, 1);
+    --secondary-color:rgba(217, 187, 255, 1);
+    --primary-text-color:rgba(50, 0, 132, 1);
+    --secondary-text-color:rgba(112, 0, 255, 1);
+    --shadow-color:rgba(112, 0, 255, 1);
+    --modal-background:rgba(112, 0, 255, 0.42);
+    --modal-text-color:#FFFFFF;
+    --form-input-bx-text-normal-color:#9b9b9b;
+    --form-input-bx-text-focus-color:#FFFFFF;
+    --form-input-bx-border-primary-color:#11998e;
+    --form-input-bx-border-secondary-color:#38ef7d;
+    --btn-color:#9747FF;
+    --btn-text-color:#FFFFFF;
+    --card-primary-color:#D9BBFF;
+    --star-normal-color:#AA9E9E;
+    --star-glow-color:#FAFF00;
+}
